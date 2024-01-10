@@ -80,13 +80,13 @@ header > h2, .volume, .ver-teclas{
     text-align: center;
     position: relative;
     cursor: pointer;
+    user-select: none;
 }
 
 .piano-teclas .tecla span{
     text-transform: uppercase;
     position: absolute;
     bottom: 20px;
-    user-select: none;
     width: 100%;
     left: 0;
 }
@@ -123,3 +123,8 @@ header > h2, .volume, .ver-teclas{
 }
 
 
+* {
+    -webkit-tap-highlight-color: transparent; /* Para navegadores baseados em WebKit, como Chrome e Safari */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Versão redundante para navegadores mais antigos */
+    -moz-tap-highlight-color: transparent; /* Para navegadores baseados em Mozilla, como Firefox */
+}
