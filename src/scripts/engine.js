@@ -1,3 +1,13 @@
+
+// Verificar a orientação e redirecionar se não estiver na horizontal
+if (window.matchMedia("(orientation: portrait)").matches) {
+    alert("Por favor, gire seu dispositivo para a orientação horizontal.");
+    // Redirecionar para outra página ou fazer algo para tentar forçar a orientação
+    // window.location.href = "pagina-na-horizontal.html";
+}
+
+
+
 const teclasPiano = document.querySelectorAll(".piano-teclas .tecla")
 let audio = new Audio(`src/audios/a.wav`)
 let mapeamentoTecla = []
